@@ -1,33 +1,133 @@
-<!DOCTYPE html>
+<!--Siempre inicializamos un doc uemnto en html con este !DOCTYPE "html"-->
+<!DOCTYPE "html">
 <html>
+<!--siguiendo la estructura basica luego seguria esta etiqueta-->
 
 
+<!--luego tenemos dos secciones principales head donde se encuentran los metadatos de la pagina , 
+asi como enlaces a otras hojas de estilo o a scripts, es la parte tipo librerias imports cosa-->
 
 <head>
-
-    <title>Agenda de empleados</title>
-
+    <title>Expedientes de Empleados</title>
 </head>
 
 
-<body>
+
+<!--y las seccion del body, donde estara todo el contenido visible de la pagina web-->
 
 
-    <h1>Hola mundo</h1>
-    <p>Este es mi primer parrafo</p>
-    <p>Puedes buscar más información en <a href="https://www.google.com">Google</a>.</p>
-    <p>Visita nuestra <a href="contacto.html">página de contacto</a>.</p>
+<body> 
 
-    <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo de HTML5" width="150">
 
-    <img src="C:\Users\gecio\Downloads\perfil.JPG">
 
-    </figure>
+    <!--Aqui es la cabecera de la pagina todo lo que pongamos aqui ira hasta arriba de la pagina-->
+    <header>
+    <!--el h1 a h6 define el tamaño del texto el 1 el mas grande el 6 el mas pequeño-->
+        <h1>Gestión de Expedientes de Empleados</h1>
+    <!--la p es un parrafo del texto-->
+        <p>Esta es una página para visualizar añadir y editar los expedientes de los empleados</p>
+    <!--cada vez que meta una imagen usamos figure para encerrar toda la imagen-->
+        <figure>
 
+        <!--insertamos la imagen com img y  el src es perfecto para señalar el origen de la imagen 
+        se puede sacar de donde este alojada la pagina o de el internet-->
+
+        <!--el alt es por si no carga la imagen-->
+
+        <!--width es perfecto para ajustar la imagen de tamaño en relacion a su tamaño original-->
+            <img src="https://i.pinimg.com/736x/60/72/72/607272cac99fa41508d0f6aec5dce327.jpg" alt="Empleados" width="200">
+            
+        <!--podemos agregar una direccion a redirigir con el figcaption-->
+            <figcaption><em>Expedientes</em></figcaption>
+        </figure>
+    </header>
+
+
+
+
+
+
+
+<!--se inserta una linea horizontal-->
+    <hr>
+
+<!--esta etiqueta se usa para definir el contenido PRINCIPAL de la pagina-->
+    <main>
+
+
+
+   
+            <h2>Expedientes Pendientes</h2>
+    <!--se crea la tabla-->
+            <table>
+            <!--agrega titulo a la tabla-->
+                <caption>Listado de Empleados a la fecha</caption>
+            <!--se define una fila en la tabla-->
+                <tr>
+                <!--se define una celda en el encabezado de una tabla-->
+                    <th>ID Empleado</th>
+                    <th>Nombre Completo</th>
+                    <th>Puesto</th>
+                    <th>Estado</th>
+                    <th>Accion</th>
+                </tr>
+                <tr>
+                <!--se meten los datos de la tabla-->
+                    <td>001</td>
+                    <td><mark>Juan Perez</mark></td>
+                    <td>Desarrollador Web</td>
+                    <td>Pendiente</td>
+                </tr>
+
+            </table>
+ 
+
+        <hr>
+
+            <h2>Añadir / Editar Expediente</h2>    
+        <!--se crea una lista de definicion-->         
+            <dl> 
+                <dt><strong>Nombre del Empleado:</strong></dt>
+            <!--salto de linea-->
+                <br>
+                <dt><strong>Puesto del Empleado:</strong></dt>
+                <br>
+                <dt><strong>Estado del Expediente:</strong></dt>
+            </dl>
+            <br>
+      
+        <!--y pues ya el mark y el strong son para adornar el texto-->
+        
+        <hr>
+        
+        
+            <h3>Detalle de un Expediente </h3>
+            <h4>Perfil de: <strong>Juan Perez</strong></h4>
+        <!--se crea una lista no ordenada con viñetas-->
+            <ul>
+            <!--li es para los elementos de la lista tons van de la mano con ul-->
+                <li><strong>ID:</strong> 001</li>
+                <li><strong>Departamento:</strong> Tecnologia</li>
+                <li><strong>Documentos Entregados:</strong>
+                    <ol>
+                        <li>Identificacion Oficial</li>
+                        <li>Comprobante de Domicilio</li>
+                        <li>CURP</li>
+                    </ol>
+                </li>
+            </ul>
     
+    </main>
+<!--se cierra el main-->
+    
+    <hr>
+
+
+
 </body>
 
+<!--cierra la seccion del body-->
 
 
 </html>
+<!--se ra el documento html-->
