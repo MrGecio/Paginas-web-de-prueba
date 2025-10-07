@@ -3,3 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Helvetica', Arial, sans-serif; /* Define la fuente principal */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  background-color: #352735; /* Un color de fondo suave */
+  color: #333; /* Color de texto principal */
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

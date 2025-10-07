@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hola soy goku</title>
+</head>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #391b01;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+            background-color: white;
+            text-align: center; /* Centra el texto y los botones */
+        }
+
+        /* 🖼️ Estilos para la imagen */
+        .card img {
+            width: 80%; /* La imagen ocupa todo el ancho del recuadro */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        
+        /* Contenedor para la descripción y botones */
+        .card-content {
+            padding: 20px;
+        }
+
+        /* 🔘 Estilos para los botones */
+        .card-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            cursor: pointer; /* Cambia el cursor a una manita */
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Efecto al pasar el mouse sobre el segundo botón (opcional) */
+        .card-buttons button.secondary {
+            background-color: white;
+            color: #007BFF;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://dragonball.guru/wp-content/uploads/2021/03/goku-profile-e1616173641804-400x400.png" alt="Fallo cargarla xd">
+        
+        <div class="card-content">
+            <h3>Hola Soy Goku</h3>
+            <p>Aquí puedes poner una breve descripción o texto relacionado con la imagen.</p>
+            <div class="card-buttons">
+                <button>Aceptar</button>
+                <button class="secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
