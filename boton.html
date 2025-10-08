@@ -18,41 +18,46 @@
             width: 300px;
             border: 1px solid #ccc;
             border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
             background-color: white;
-            text-align: center; /* Centra el texto y los botones */
+            text-align: center;
         }
 
-        /* 🖼️ Estilos para la imagen */
         .card img {
-            width: 80%; /* La imagen ocupa todo el ancho del recuadro */
-            height: auto; /* Mantiene la proporción de la imagen */
+            width: 80%;
+            height: auto;
         }
         
-        /* Contenedor para la descripción y botones */
         .card-content {
             padding: 20px;
         }
 
-        /* 🔘 Estilos para los botones */
         .card-buttons button {
             padding: 10px 20px;
             margin: 5px;
             border: 1px solid #007BFF;
             border-radius: 5px;
-            cursor: pointer; /* Cambia el cursor a una manita */
+            cursor: pointer;
             background-color: #007BFF;
             color: white;
             font-size: 16px;
         }
 
-        /* Efecto al pasar el mouse sobre el segundo botón (opcional) */
         .card-buttons button.secondary {
             background-color: white;
             color: #007BFF;
         }
 
+        .card-buttons button:active {
+    background-color: #0056b3; /* Un azul más oscuro */
+    border-color: #0056b3;
+}
+
+/* ✨ Estilo para cuando se presiona el botón secundario */
+.card-buttons button.secondary:active {
+    background-color: #e2e6ea; /* Un gris claro */
+}
     </style>
 </head>
 <body>
@@ -62,7 +67,6 @@
         
         <div class="card-content">
             <h3>Hola Soy Goku</h3>
-            <p>Aquí puedes poner una breve descripción o texto relacionado con la imagen.</p>
             <div class="card-buttons">
                 <button>Aceptar</button>
                 <button class="secondary">Cancelar</button>
