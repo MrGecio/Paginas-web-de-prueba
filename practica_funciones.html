@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+</head>
+
+<body>
+
+<main>
+
+    <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+
+    <button onclick="mostrarMensaje()">Saludar</button>
+
+    <input type="text" id="campoTexto" placeholder="Escribe algo...">
+
+    <button onclick="mostrarHora()">Mostrar Hora</button>
+
+    <p id="hora"></p>
+
+    
+
+
+
+
+    <script>
+        function saludar() {
+
+    console.log("¡Hola, bienvenido a JavaScript!");
+
+    }
+
+    saludar();
+
+ 
+
+
+
+    function mostrarMensaje() {
+
+    let nombre = document.getElementById("nombreInput").value;
+
+    if (nombre.trim() === "") {
+
+        alert("Por favor, ingresa un nombre.");
+
+    } else {
+
+        alert("Hola, " + nombre + "!");
+
+    }
+
+    }
+
+    function sumar(a, b) {
+
+    return a + b;
+
+}
+
+console.log("La suma es: " + sumar(5, 3));
+
+
+function mostrarHora() {
+
+    let fecha = new Date();
+
+    document.getElementById("hora").innerHTML = "Hora actual: " + fecha.toLocaleTimeString();
+
+}
+
+
+document.getElementById("campoTexto").addEventListener("keydown", function(event) {
+
+    console.log("Tecla presionada: " + event.key);
+
+});
+
+
+    </script>
+
+
+</main>
+
+
+</body>
+
+
+
+
+</html>
